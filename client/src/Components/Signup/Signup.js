@@ -38,7 +38,7 @@ import { useNavigate} from 'react-router-dom';
               <input type="password" name="pswd" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
               <button onClick={(e)=>{
                 e.preventDefault();
-                dispatch(registerUser({name,lastName,email,password},navigate("/dashboard")))}
+                dispatch(registerUser({name,lastName,email,password},navigate))}
               }>Sign up</button>
               
             </form>
@@ -50,7 +50,7 @@ import { useNavigate} from 'react-router-dom';
               <input type="password" name="pswd" placeholder="Password" onChange={(e)=>setPassword(e.target.value)} />
               <button onClick={(e)=>{
                 e.preventDefault();
-              dispatch(loginUser({email,password},navigate("/dashboard")))
+              dispatch(loginUser({email,password},navigate))
               // if (location.state?.from) {
               //   navigate(location.state.from)
               // }

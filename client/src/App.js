@@ -23,9 +23,12 @@ function App() {
       <Routes>
       
         <Route exact path= '/' element={<Signup/>}/>
-        <Route element={<PrivateRoute />}>
+        <Route  element={< PrivateRoute/>}>
           <Route path="/dashboard" element={<Dashboard />} />
-        </Route>{" "}
+        </Route>
+        {/* <Route element={<PrivateRoute />}>
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Route> */}
 
         {/* <Route element={<PrivateRoute />}> </Route>{" "} */}
           {/* <Route path="/profil" element={<Profil />} />

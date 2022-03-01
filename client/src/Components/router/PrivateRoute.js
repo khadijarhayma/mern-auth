@@ -4,7 +4,7 @@
 
 // const PrivateRoute = ({element:Element , ...rest}) => {
 //     const isAuth = localStorage.getItem("token")
-//     if (isAuth) {
+//     if (token) {
 //         return <Route  element={<Element/>} {...rest} />;
 //      }
 //      return   <Navigate  to="/" />
